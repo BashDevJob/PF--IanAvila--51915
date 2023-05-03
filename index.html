@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>proyecto final</title>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1"><h1>Semillas Gaia</h1></span>
+        </div>
+      </nav>
+<div class="ocultar" id="mostrarCarro">
+    <div id="filtroBtn">
+        <div class="form-check" id="frioF">
+            <input class="form-check-input" type="checkbox" value="" id="frio">
+            <label class="form-check-label" for="flexCheckDefault">
+              frio
+            </label>
+        </div>
+        <div class="form-check-1" id="calorF">
+            <input class="form-check-input" type="checkbox" value="" id="calor">
+            <label class="form-check-label" for="flexCheckDefault">
+              calor
+            </label>
+        </div>
+        <div class="form-check-2" id="anualF">
+            <input class="form-check-input" type="checkbox" value="" id="anual">
+            <label class="form-check-label" for="flexCheckDefault">
+              anual
+            </label>
+        </div>
+        <button type="button" id="verCarrito" class="btn btn-outline-success">Carro de compras</button>
+    </div>
+    <div id="contenedorDeProductos">
+        
+    </div>
+</div>
+<div id="registroInicio" class="mostrar">
+    <div>
+        <h3>REGISTRARSE</h3>
+        <div id="registrarse">
+            <div class="form-floating mb-3" id="nuevoUs">
+                <input type="email" class="form-control" id="usuario" placeholder="Nuevo Usuario">
+                <label for="floatingInput">Nuevo Usuario</label>
+            </div>
+            <div class="form-floating" id="nuevaPass">
+                <input type="password" class="form-control" id="contrasenia" placeholder="Contraseña">
+                <label for="floatingPassword">Contraseña</label>
+            </div>
+            <div>
+                <button id="registrar">enviar</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3>INICIAR SESION</h3>
+        <div id="iniciar">
+            <div class="form-floating mb-3" id="user">
+                <input type="email" class="form-control" id="usuarioLogn" placeholder="Nuevo Usuario">
+                <label for="floatingInput">Nuevo Usuario</label>
+            </div>
+            <div class="form-floating" id="pass">
+                <input type="password" class="form-control" id="contraseniaLogn" placeholder="Contraseña">
+                <label for="floatingPassword">Contraseña</label>
+            </div>
+            <div>
+                <button id="iniciarSesion">enviar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="carro" class="ocultar">
+    <div class="mb-3">
+        <button type="button" class="btn btn-outline-dark" id="inicio">Seguir comprando</button>
+        <button type="button" class="btn btn-outline-primary" id="comprar">Finalizar compra</button>
+    </div>
+    <div id="contenedorCarro">
+        
+    </div>
+</div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
